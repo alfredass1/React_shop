@@ -43,7 +43,7 @@ class Orders extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        fetch("http://shop.test/api/store-orders", {
+        fetch("http://skelbimai.test/api/store-orders", {
             method: "POST",
             headers: {
                 Accept: "application/json", "Content-Type": "application/json"

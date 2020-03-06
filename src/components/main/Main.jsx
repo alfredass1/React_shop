@@ -9,7 +9,7 @@ class Main extends Component{
     }
 
     componentDidMount() {
-        fetch(`http://shop.test/api/all-products`)
+        fetch(`http://skelbimai.test/api/all-products`)
             .then(response => response.json())
             .then(
                 data=>{
@@ -20,19 +20,18 @@ class Main extends Component{
             )
     }
     render(){
+
         return(
             <main>
-                <div className="row card-row">
-                    <div className="card container card-container">
-                        <div className="card-header">
-                            Shop
-                        </div>
+                <div className="container">
+
+
                         <div className="card-body">
-                            {/*<Products products = {this.state.allProducts}/>*/}
-                            <Orders/>
+                           <Products products = {this.state.allProducts}/>
+                            {/*<Orders/>*/}
                         </div>
                     </div>
-                </div>
+
             </main>
         );
 
